@@ -1,0 +1,289 @@
+*{
+    font-family: "IBM Plex Serif", serif;
+    font-style: normal;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body
+{   
+    background-image:url(../assest/img/solid-concrete-wall-textured-backdrop.jpg);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+header
+{
+    display: flex;
+    flex-wrap: nowrap;
+    background: none;
+    animation: Titulo 6s ease .5s  normal both;
+}
+header h1{
+    background: local;
+    font-size: 4rem;
+}
+@keyframes Titulo{
+    from 
+    {
+        transform: translateX(0);
+        opacity: 0;
+    }
+    to
+    {
+        transform: translateX(25%);
+        opacity:1;
+    }
+}
+nav{
+    display: flex;
+    justify-content:center;
+}
+.NavegacionPadreContainer
+{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    position:relative;
+}
+.boton
+{
+    flex-wrap: nowrap;
+    background: linear-gradient(to right top, #191717, #1b1919, #1d1a1a, #1f1c1c, #211e1e, #312e2e, #423f3f, #545051, #7b787a, #a5a3a4, #d1d0d1, #ffffff);
+    text-decoration: none;
+    padding: 20px 50px;
+    margin: 50px;
+    border-radius: 15px;
+    transition-duration: 1s;
+}
+.btn:hover
+{
+scale:150%;
+background: linear-gradient(to left bottom, #191717, #1b1919, #1d1a1a, #1f1c1c, #211e1e, #312e2e, #423f3f, #545051, #7b787a, #a5a3a4, #d1d0d1, #ffffff);
+box-shadow: 0 0 15px white;
+cursor:pointer;
+}
+p{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 50px;
+}
+.P_1{
+    
+    animation: Parrafos 4s ease 3s both;
+}
+.P_2{
+    animation: Parrafos 4s ease 5s both;
+}
+@keyframes Parrafos {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+footer
+{
+    display: flex;
+    background: local;
+    position: absolute;
+    bottom: 0;
+    margin: 0px 20px;
+    gap: 10px;
+}
+footer img
+{
+    display: flex;
+    width: 50px;
+    height: auto;
+    background: local;
+    background-repeat: no-repeat;
+}
+.HeaderSobremi
+{
+    background: local;
+    max-width: 100%;
+    animation: none;
+}
+a
+{
+    text-decoration: none;
+}
+.HeaderSobremi img{
+    margin:20px;
+    width: 60px;
+    height: 60px;
+}
+.HeaderSobremi section {
+    display: flex;
+    width: 100%;
+    height:max-content;
+    justify-content: right;
+    padding: 10px
+}
+.navegacionHeader :first-child
+{
+    text-align: center;
+    padding: 0 40px;
+    border-right: 2px solid white;
+}
+.navegacionHeader :nth-child(2)
+{
+    text-align: center;
+    padding: 0 40px;
+    border-right: 2px solid white;
+}
+.navegacionHeader :last-child
+{
+    text-align: center;
+    padding: 0 40px;
+}
+.navegacionHeader :hover
+{
+    background: linear-gradient(to left bottom, #191717, #1b1919, #1d1a1a, #1f1c1c, #211e1e, #312e2e, #423f3f, #545051, #7b787a, #a5a3a4, #d1d0d1, #ffffff);
+}
+.ContenedorPerfil
+{
+    display: flex;
+}
+.ContenedorPerfil img
+{
+
+    border-radius: 20%;
+    max-width: 400px;
+    max-height: 400px;
+    margin-left: 20px;
+    border: none;
+    padding: 0;
+}
+.ContenedorPerfil p{
+    border: none;
+    text-align: left;
+    padding: 20px;
+    animation: Parrafos 2s ease .5s both;
+
+}
+.idiomas
+{
+    margin:10px 0px 5px 20px;
+    animation: Parrafos 2s ease .5s both;
+}
+.listaIdiomas
+{
+    margin: 0px 40px;
+    animation: Parrafos 2s ease 1s both;
+}
+ol
+{
+    display: flex;
+    list-style-type:upper-roman;
+    margin: 30px 0px 0px 25px;
+    list-style: upper-roman;
+    padding-left: 10px;
+}
+.item
+{
+    font-size: 1.6rem;
+    margin-top: 10px;
+}
+.FormacionUTN
+{
+    margin: 40px 0px 0px 32px;
+}
+.FormacionUTN img
+{
+    width: 300px;
+    height: 120px;
+    margin: 10px 0px 0px 20px;
+}
+.FormacionCoder
+{
+    margin:40px 0px 0px 40px;
+
+}
+.FormacionCoder img
+{
+    width: 300px;
+    height: 120px;
+    margin: 0px 0px 0px 350px;
+}
+form
+{      
+    
+    background-color: #FFFFFF;	
+    position: relative;	
+    margin: 0vh 10vh 20vh 75vh;
+    border-radius: 20px;
+    padding: 15px 45px 15px 45px;
+    max-width:500px;
+    text-align: center;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+form h2
+{
+    color: black;
+}
+label
+{
+    color: black;
+}
+input, textarea
+{
+    color: black;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    outline: none;
+}
+input
+{
+    margin-top: 10px;
+    cursor: pointer;
+}
+.Pasantia
+{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+span
+{
+    font-size: 30px;
+}
+.ContainerTrabajo
+{
+    display: flex;
+}
+article ul
+{
+    padding-left: 35px;
+    font-size: 30px;
+    margin-top: 10px;
+}
+article ul li
+{
+    margin-top: 20px;
+}
+.ImagenesTrabajo
+{
+    display:inline;
+    width: 500px;
+    height: 500px;
+    margin-left: 200px;
+}
+.ImagenesTrabajo img{
+    
+    width:200px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 10px;
+}
+.LogoRobotica
+{
+    background: white;
+}
