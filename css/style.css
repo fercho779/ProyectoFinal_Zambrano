@@ -13,7 +13,7 @@ body
     background-repeat: no-repeat;
     overflow: hidden;
 }
-header
+.Header__index
 {
     display: flex;
     flex-wrap: nowrap;
@@ -102,44 +102,19 @@ footer img
     background-repeat: no-repeat;
 }
 /* Aqui finaliza el CSS del Index*/
-.HeaderSobremi
+.navbar-custom .navbar-brand,.navbar-custom .navbar-nav .nav-link
 {
-    background: local;
-    max-width: 100%;
-    animation: none;
+    color: white !important;
+    font-size: 20px;
 }
-a
+.navbar-custom .navbar-brand img
 {
-    text-decoration: none;
-}
-.HeaderSobremi img{
-    margin:20px;
     width: 60px;
     height: 60px;
 }
-.HeaderSobremi section {
-    display: flex;
-    width: 100%;
-    height:max-content;
-    justify-content: right;
-    padding: 10px
-}
-.navegacionHeader :first-child
+.navbar-custom .navbar-nav .nav-link:hover
 {
-    text-align: center;
-    padding: 0 40px;
-    border-right: 2px solid white;
-}
-.navegacionHeader :nth-child(2)
-{
-    text-align: center;
-    padding: 0 40px;
-    border-right: 2px solid white;
-}
-.navegacionHeader :last-child
-{
-    text-align: center;
-    padding: 0 40px;
+    background: linear-gradient(to left bottom, #191717, #1b1919, #1d1a1a, #1f1c1c, #211e1e, #312e2e, #423f3f, #545051, #7b787a, #a5a3a4, #d1d0d1, #ffffff);
 }
 .navegacionHeader :hover
 {
