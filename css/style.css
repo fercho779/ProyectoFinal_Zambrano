@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing:border-box;
 }
+
 body
 {   
     background-image:url(../assest/img/solid-concrete-wall-textured-backdrop.jpg);
@@ -100,6 +101,7 @@ footer img
     background: local;
     background-repeat: no-repeat;
 }
+/* Aqui finaliza el CSS del Index*/
 .HeaderSobremi
 {
     background: local;
@@ -174,6 +176,7 @@ a
     margin: 0px 40px;
     animation: Parrafos 2s ease 1s both;
 }
+/* Aqui finaliza el CSS de Sobre mi*/
 ol
 {
     display: flex;
@@ -208,6 +211,7 @@ ol
     height: 120px;
     margin: 0px 0px 0px 350px;
 }
+/* Aqui finaliza el CSS de Formacion*/
 form
 {      
     
@@ -246,6 +250,7 @@ input
     margin-top: 10px;
     cursor: pointer;
 }
+/* aqui finaliza el CSS de Contacto*/
 .Pasantia
 {
     font-size: 35px;
