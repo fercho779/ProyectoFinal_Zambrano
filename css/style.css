@@ -10,8 +10,6 @@
 body
 {   
    background-image:url(../assest/img/solid-concrete-wall-textured-backdrop.jpg);
-     /*background-repeat: no-repeat;
-    overflow: hidden;*/
 }
 .Header__index
 {
@@ -86,28 +84,32 @@ p{
 }
 footer
 {
+    margin:20px 20px 0px 0px;
     display: flex;
     background: local;
-    position: absolute;
-    bottom: 0;
-    margin: 0px 20px;
     gap: 10px;
+    justify-content: end;
 }
 footer img
 {
     display: flex;
-    width: 50px;
+    width: 100px;
     height: auto;
     background: local;
     background-repeat: no-repeat;
 }
-
+footer h3
+{
+    font-size: 3rem;
+}
 /* Aqui finaliza el CSS del Index*/
+
+/*vista Mobile*/
 
 .navbar-custom .navbar-brand,.navbar-custom .navbar-nav .nav-link
 {
     color: white !important;
-    font-size: 20px;
+    font-size: 25px;
 }
 .navbar-custom .navbar-brand img
 {
@@ -121,46 +123,88 @@ footer img
 .Contenedor_Perfil
 {
     display:Grid;
-    height: 500px;
-    border: solid 1px white;
+    height: auto;
     grid-template-areas: 
-    "foto Descripcion"
+    "foto "
+    "Descripcion"
     ;
-    grid-template-columns: 450px 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+   
 }
 .Foto_Perfil
 {
     grid-area: foto;
+    justify-self: center;
 }
 .Foto_Perfil img
 {
     border-radius: 20%;
-    max-width: 400px;
-    max-height: 400px;
-    margin-left: 20px;
 }
 .Descripcion_Perfil
 {
     grid-area: Descripcion;
-   
-    padding: 20px;
     animation: Parrafos 2s ease .5s both;
-
 }
-.ContenedorPerfil p{
-   
+.Descripcion_Perfil p
+{
+    margin: 25px 0px;
+    text-align: center;
+    font-size: 4rem;
 }
 .idiomas
 {
-    margin:10px 0px 5px 20px;
+    font-size: 4rem;
+    margin:20px 0px 5px 20px;
     animation: Parrafos 2s ease .5s both;
 }
 .listaIdiomas
 {
     margin: 0px 40px;
+    font-size: 3rem;
     animation: Parrafos 2s ease 1s both;
 }
+
+/*vista desktop*/
+
+@media(min-width: 1024px)
+{
+    .Contenedor_Perfil{
+        grid-template-columns: 450px 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "foto Descripcion"
+        ;
+    }
+    .Descripcion_Perfil p
+        {
+            text-align: left;
+            font-size: 2.4rem;
+        }
+    .Foto_Perfil
+    {
+        margin: 0px 20px;
+    }
+    .idiomas
+    {
+        font-size: 2rem;
+    }
+    .listaIdiomas
+    {
+        font-size: 1.5rem;
+    }
+    footer img
+    {
+        width: 50px;
+    }
+    footer h3
+    {
+    font-size: 2rem;
+    }
+}
+
 /* Aqui finaliza el CSS de Sobre mi*/
+
 ol
 {
     display: flex;
@@ -239,6 +283,7 @@ input
 {
     font-size: 35px;
     margin-bottom: 10px;
+    color: white;
 }
 span
 {

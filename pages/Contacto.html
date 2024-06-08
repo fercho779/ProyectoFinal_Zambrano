@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
@@ -11,15 +12,28 @@
 </head>
 <body>
     <body>
-        <Header class="HeaderSobremi">
-                <a href="../index.html">
-                    <img src="../assest/img/portfolio_351456.png" alt="Porfolio">
+        <Header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-local navbar-custom">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assest/img/portfolio_351456.png" alt="Portfolio">
                 </a>
-           <section class="navegacionHeader">
-            <a href="./sobreMi.html">SobreMi</a>
-            <a href="./Formacion.html">Formacion</a>
-            <a href="./TrabajosExperiencias.html">Trabajos y experiencia</a>
-           </section>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav w-100 d-flex justify-content-end">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./sobreMi.html">Sobre Mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Formacion.html">Formación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./TrabajosExperiencias.html">Trabajos y Experiencias</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </Header>
         <form >
             <h2>Contacto</h2>
@@ -47,5 +61,6 @@
                 <img src="../assest/img/instagram.png" alt="instagram">
             </a>
         </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
