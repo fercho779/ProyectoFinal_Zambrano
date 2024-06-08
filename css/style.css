@@ -9,9 +9,9 @@
 
 body
 {   
-    background-image:url(../assest/img/solid-concrete-wall-textured-backdrop.jpg);
-    background-repeat: no-repeat;
-    overflow: hidden;
+   background-image:url(../assest/img/solid-concrete-wall-textured-backdrop.jpg);
+     /*background-repeat: no-repeat;
+    overflow: hidden;*/
 }
 .Header__index
 {
@@ -101,7 +101,9 @@ footer img
     background: local;
     background-repeat: no-repeat;
 }
+
 /* Aqui finaliza el CSS del Index*/
+
 .navbar-custom .navbar-brand,.navbar-custom .navbar-nav .nav-link
 {
     color: white !important;
@@ -116,30 +118,37 @@ footer img
 {
     background: linear-gradient(to left bottom, #191717, #1b1919, #1d1a1a, #1f1c1c, #211e1e, #312e2e, #423f3f, #545051, #7b787a, #a5a3a4, #d1d0d1, #ffffff);
 }
-.navegacionHeader :hover
+.Contenedor_Perfil
 {
-    background: linear-gradient(to left bottom, #191717, #1b1919, #1d1a1a, #1f1c1c, #211e1e, #312e2e, #423f3f, #545051, #7b787a, #a5a3a4, #d1d0d1, #ffffff);
+    display:Grid;
+    height: 500px;
+    border: solid 1px white;
+    grid-template-areas: 
+    "foto Descripcion"
+    ;
+    grid-template-columns: 450px 1fr;
 }
-.ContenedorPerfil
+.Foto_Perfil
 {
-    display: flex;
+    grid-area: foto;
 }
-.ContenedorPerfil img
+.Foto_Perfil img
 {
-
     border-radius: 20%;
     max-width: 400px;
     max-height: 400px;
     margin-left: 20px;
-    border: none;
-    padding: 0;
 }
-.ContenedorPerfil p{
-    border: none;
-    text-align: left;
+.Descripcion_Perfil
+{
+    grid-area: Descripcion;
+   
     padding: 20px;
     animation: Parrafos 2s ease .5s both;
 
+}
+.ContenedorPerfil p{
+   
 }
 .idiomas
 {
