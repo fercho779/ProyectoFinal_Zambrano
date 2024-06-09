@@ -102,9 +102,10 @@ footer h3
 {
     font-size: 3rem;
 }
+
 /* Aqui finaliza el CSS del Index*/
 
-/*vista Mobile*/
+/*vista Mobile Formacion*/
 
 .navbar-custom .navbar-brand,.navbar-custom .navbar-nav .nav-link
 {
@@ -165,81 +166,70 @@ footer h3
     animation: Parrafos 2s ease 1s both;
 }
 
-/*vista desktop*/
-
-@media(min-width: 1024px)
-{
-    .Contenedor_Perfil{
-        grid-template-columns: 450px 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "foto Descripcion"
-        ;
-    }
-    .Descripcion_Perfil p
-        {
-            text-align: left;
-            font-size: 2.4rem;
-        }
-    .Foto_Perfil
-    {
-        margin: 0px 20px;
-    }
-    .idiomas
-    {
-        font-size: 2rem;
-    }
-    .listaIdiomas
-    {
-        font-size: 1.5rem;
-    }
-    footer img
-    {
-        width: 50px;
-    }
-    footer h3
-    {
-    font-size: 2rem;
-    }
-}
-
 /* Aqui finaliza el CSS de Sobre mi*/
 
-ol
-{
-    display: flex;
-    list-style-type:upper-roman;
-    margin: 30px 0px 0px 25px;
-    list-style: upper-roman;
-    padding-left: 10px;
-}
-.item
-{
-    font-size: 1.6rem;
-    margin-top: 10px;
-}
-.FormacionUTN
-{
-    margin: 40px 0px 0px 32px;
-}
-.FormacionUTN img
-{
-    width: 300px;
-    height: 120px;
-    margin: 10px 0px 0px 20px;
-}
-.FormacionCoder
-{
-    margin:40px 0px 0px 40px;
+/* Vista Mobile Formacion*/
 
-}
-.FormacionCoder img
+.Estudios
 {
-    width: 300px;
-    height: 120px;
-    margin: 0px 0px 0px 350px;
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+    "Foto_UAI"
+    "Descripcion_UAI"
+    "Foto_UTN"
+    "Descripcion_UTN"
+    "Foto_Coder"
+    "Descripcion_Coder"
+    ;
+    row-gap:20px;
 }
+.Logo_UAI
+{
+    grid-area: Foto_UAI;
+    justify-self: center;
+}
+.Logo_UAI img
+{
+    height:300px ;
+}
+.Estudios_UAI
+{
+    grid-area: Descripcion_UAI;
+}
+.Logo_UTN
+{
+    grid-area: Foto_UTN;
+}
+.Estudios_UTN
+{
+    grid-area: Descripcion_UTN;
+}
+.Logo_Coder
+{
+    grid-area: Foto_Coder ;
+}
+.Logo_Coder img
+{
+    height: 300px;
+    justify-self: center;
+    margin: 0px 10px;
+}
+.Estudios_Coder
+{
+    grid-area: Descripcion_Coder;
+}
+.Parrafos-Estudios
+{
+    font-size: 3rem;
+    text-align: justify;
+    margin: 0px 20px;
+}
+
 /* Aqui finaliza el CSS de Formacion*/
+
 form
 {      
     
@@ -278,7 +268,9 @@ input
     margin-top: 10px;
     cursor: pointer;
 }
+
 /* aqui finaliza el CSS de Contacto*/
+
 .Pasantia
 {
     font-size: 35px;
@@ -320,4 +312,75 @@ article ul li
 .LogoRobotica
 {
     background: white;
+}
+
+/*Vista Desktop*/
+
+@media(min-width: 1024px)
+{
+    .Contenedor_Perfil{
+        grid-template-columns: 450px 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "foto Descripcion"
+        ;
+    }
+    .Descripcion_Perfil p
+        {
+            text-align: left;
+            font-size: 2.4rem;
+        }
+    .Foto_Perfil
+    {
+        margin: 0px 20px;
+    }
+    .idiomas
+    {
+        font-size: 2rem;
+    }
+    .listaIdiomas
+    {
+        font-size: 1.5rem;
+    }
+    footer img
+    {
+        width: 50px;
+    }
+    footer h3
+    {
+    font-size: 2rem;
+    }
+
+    /*Fin Desktop SobreMi */
+
+    /*Inicio Desktop Formacion */
+
+    .Estudios
+    {
+        grid-template-columns: 400px auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "Foto_UAI Descripcion_UAI"
+        "Foto_UTN Descripcion_UTN"
+        "Foto_Coder Descripcion_Coder"
+        ;
+    }
+    .Parrafos-Estudios
+    {
+        text-align: left;
+        font-size: 2rem;
+        align-self: center;
+    }
+    .Logo_UAI img
+    {
+        height: 200px;
+    }
+    .Logo_Coder img
+    {
+        height: 200px
+    }
+    .Logo_UTN img
+    {
+        height: 200px;
+    }
 }
