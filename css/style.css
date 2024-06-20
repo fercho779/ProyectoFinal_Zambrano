@@ -131,6 +131,7 @@ footer h3
     ;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    row-gap: 20px;
    
 }
 .Foto_Perfil
@@ -149,19 +150,19 @@ footer h3
 }
 .Descripcion_Perfil p
 {
-    margin: 25px 0px;
-    text-align: center;
+    margin:25px;
+    text-align: justify;
     font-size: 4rem;
 }
 .idiomas
 {
     font-size: 4rem;
-    margin:20px 0px 5px 20px;
+    margin:25px;
     animation: Parrafos 2s ease .5s both;
 }
 .listaIdiomas
 {
-    margin: 0px 40px;
+    margin: 25px;
     font-size: 3rem;
     animation: Parrafos 2s ease 1s both;
 }
@@ -225,7 +226,7 @@ footer h3
 {
     font-size: 3rem;
     text-align: justify;
-    margin: 0px 20px;
+    margin: 25px;
 }
 
 /* Aqui finaliza el CSS de Formacion*/
@@ -289,11 +290,11 @@ article ul
 {
     padding-left: 35px;
     font-size: 30px;
-    margin-top: 10px;
+    margin: 25px;
 }
 article ul li
 {
-    margin-top: 20px;
+    margin: 25px;
 }
 .ImagenesTrabajo
 {
