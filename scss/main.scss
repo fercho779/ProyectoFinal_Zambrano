@@ -6,7 +6,8 @@
 @import "views/home";
 @import "components/button";
 @import "layout/footer";
-
+@import "layout/nav";
+@import "views/sobremi";
 @mixin respond-to($media){
     @if $media == 'desktop'
     {

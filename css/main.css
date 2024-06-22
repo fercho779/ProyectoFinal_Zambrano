@@ -152,6 +152,57 @@ footer img {
   background-repeat: no-repeat;
 }
 
+.navbar-custom .navbar-brand, .navbar-custom .navbar-nav .nav-link {
+  color: white !important;
+  font-size: 2rem;
+}
+.navbar-custom .navbar-brand .navbar-custom .navbar-brand img, .navbar-custom .navbar-nav .nav-link .navbar-custom .navbar-brand img {
+  width: 60px;
+  height: 60px;
+}
+.navbar-custom .navbar-brand .navbar-custom .navbar-nav .nav-link:hover, .navbar-custom .navbar-nav .nav-link .navbar-custom .navbar-nav .nav-link:hover {
+  background: linear-gradient(to left bottom, #191717, #1b1919, #1d1a1a, #1f1c1c, #211e1e, #312e2e, #423f3f, #545051, #7b787a, #a5a3a4, #d1d0d1, #ffffff);
+}
+
+.Contenedor_Perfil {
+  display: Grid;
+  height: auto;
+  grid-template-areas: "foto " "Descripcion";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  row-gap: 20px;
+}
+
+.Foto_Perfil {
+  grid-area: foto;
+  justify-self: center;
+}
+.Foto_Perfil img {
+  grid-area: foto;
+  justify-self: center;
+}
+
+.Descripcion_Perfil {
+  grid-area: Descripcion;
+  animation: Parrafos 2s ease 0.5s both;
+}
+.Descripcion_Perfil p {
+  margin: 25px;
+  text-align: justify;
+}
+
+.idiomas {
+  font-size: 4rem;
+  margin: 25px;
+  animation: Parrafos 2s ease 0.5s both;
+}
+
+.listaIdiomas {
+  margin: 25px;
+  font-size: 3rem;
+  animation: Parrafos 2s ease 1s both;
+}
+
 @media (min-width: 1024px) {
   .nav__container__index {
     grid-template-columns: auto auto auto auto;

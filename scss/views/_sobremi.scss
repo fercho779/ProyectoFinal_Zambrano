@@ -1,0 +1,45 @@
+.Contenedor_Perfil
+{
+    display:Grid;
+    height: auto;
+    grid-template-areas: 
+    "foto "
+    "Descripcion"
+    ;
+    grid-template-columns: $grid-template-columns-size;
+    grid-template-rows: auto;
+    row-gap: 20px;
+   
+}
+.Foto_Perfil
+{
+    grid-area: foto;
+    justify-self: center;
+    img
+    {
+        grid-area: foto;
+        justify-self: center;
+    }
+}
+.Descripcion_Perfil
+{
+    grid-area: Descripcion;
+    animation: Parrafos 2s ease .5s both;
+    p
+    {
+        margin:$margin-definido;
+        text-align: justify;
+    }
+}
+.idiomas
+{
+    font-size: 4rem;
+    margin:25px;
+    animation: Parrafos 2s ease .5s both;
+}
+.listaIdiomas
+{
+    margin: 25px;
+    font-size: 3rem;
+    animation: Parrafos 2s ease 1s both;
+}
