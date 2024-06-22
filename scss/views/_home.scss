@@ -1,0 +1,83 @@
+.main
+{
+    width:auto ;
+}
+.Header__index
+{
+    margin: $margin-index;
+    width: $max-width;
+    h1
+    {
+        text-align: center;
+    }
+}
+.carousel-inner img{
+    background-position: center;
+    height: 500px;
+    object-fit: cover;
+    width: 100%;
+}
+.section__index__p1
+{
+    margin-top: 50px;
+    width: $max-width;
+    p
+    {
+        animation: Parrafos 4s ease 3s both;
+        text-align: center;
+    }
+}
+.section__index__p2
+{
+    margin: $margin-index;
+    width: $max-width;
+    p
+    {
+        animation: Parrafos 4s ease 5s both;
+        text-align: justify;
+        margin: $margin-definido;
+    }
+}
+.nav__container__index
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "btn_sobremi btn_formacion "
+    "btn_contacto btn_trabajos"
+    ;
+    height: 500px;
+    column-gap: 150px;
+    width: auto;
+   // margin: $margin-index;
+    a{
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+    }
+}
+@keyframes Parrafos {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.btn_sobremi
+{
+    grid-area: btn_sobremi;
+}
+.btn_formacion
+{
+    grid-area: btn_formacion;
+}
+.btn_contacto
+{
+    grid-area: btn_contacto;
+}
+.btn_trabajos
+{
+    grid-area: btn_trabajos;
+}

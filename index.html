@@ -2,12 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="shortcut icon" href="assest/img/portfolio_351456.png" type="image/x-icon">
-    
     <title>Porfolio</title>
 </head>
 <body>
@@ -16,21 +13,33 @@
             Un ingeniero en progreso
         </h1>
     </header>
-    <section>
-        <p class="P_1">Hola mi nombre es Fernando</p>
-    </section>
-    <nav>
-        <div class="NavegacionPadreContainer">                
-                <a href="./pages/sobreMi.html"target="blank" class ="boton btn">Sobre Mi</a>
-                <a href="./pages/Formacion.html" target="blank"class ="boton btn">Formacion</a>
-                <a href="./pages/Contacto.html"target="blank"class ="boton btn">Contacto</a>
-                <a href="./pages/TrabajosExperiencias.html"target="blank"class ="boton btn"> Trabajos y experiencia</a>
-        </div>
-        
-    </nav>
-    <section>
-        <p class="P_2">Este es mi Porfolio puedes saber mas de mi con los botones de arriba</p>
-    </section>
+    <main>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assest/img/imgcarrusel1.jpg" class="d-block w-100"  alt="First slide">
+              </div>
+              <div class="carousel-item ">
+                <img src="./assest/img/imgcarrusel2.jpg" class="d-block w-100"  alt="Second slide">
+              </div>
+              <div class="carousel-item ">
+                <img src="./assest/img/imgcarrusel3.jpg" class="d-block w-100"  alt="Third slide">
+              </div>
+            </div>
+          </div>
+        <section class="section__index__p1">
+            <p>Hola mi nombre es Fernando</p>
+        </section>
+        <nav class="nav__container__index">              
+            <a href="./pages/sobreMi.html"target="blank" class ="btn_sobremi link-boton ">Sobre Mi</a>
+            <a href="./pages/Formacion.html" target="blank"class ="btn_formacion link-boton">Formacion</a>
+            <a href="./pages/Contacto.html"target="blank"class ="btn_contacto link-boton">Contacto</a>
+            <a href="./pages/TrabajosExperiencias.html"target="blank"class ="btn_trabajos link-boton"> Trabajos</a>
+        </nav>
+        <section class="section__index__p2">
+            <p>te doy la bienvenidad a mi Porfolio puedes saber sobre mi, mis habilidades proyectos y experiencias en las que he podido participar con los botones de arriba puedes pasar por las distintas secciones</p>
+        </section>
+    </main>
     <footer>
         <h3>Sigueme en: </h3>
         <a href="https://github.com/fercho779"target="blank" class="github">
@@ -43,7 +52,6 @@
             <img src="./assest/img/instagram.png" alt="instagram">
         </a>
     </footer>
-    
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

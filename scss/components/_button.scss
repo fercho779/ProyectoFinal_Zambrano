@@ -1,0 +1,15 @@
+.link-boton
+{
+    background: $background-boton-primary;
+    text-decoration: none;
+    border-radius: $border-radius-boton;
+    padding: $padding-boton;
+    transition-duration: 1s;
+    &:hover
+    {
+        scale:125%;
+        background: $background-boton-secondary;
+        box-shadow: $box-shadow-boton;
+        cursor:pointer;
+    }
+}

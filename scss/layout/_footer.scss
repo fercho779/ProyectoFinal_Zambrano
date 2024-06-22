@@ -1,0 +1,15 @@
+footer
+{
+    margin:$margin-footer;
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    align-items: center;
+    img{
+        display: flex;
+        width: $max-width-img-footer;
+        height: auto;
+        background: local;
+        background-repeat: no-repeat;
+    }
+}

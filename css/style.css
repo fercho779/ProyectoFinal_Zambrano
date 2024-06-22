@@ -1,12 +1,14 @@
 *{
-    font-family: "IBM Plex Serif", serif;
-    font-style: normal;
+   
     color: #fff;
     margin: 0;
     padding: 0;
     box-sizing:border-box;
 }
-
+@font-face {
+    font-family:"IBM Plex Sans";
+    src: url(../assest/fonts/IBMPlexSans-Regular.ttf);
+}
 body
 {   
    background-image:url(../assest/img/solid-concrete-wall-textured-backdrop.jpg);
@@ -19,7 +21,7 @@ body
     animation: Titulo 6s ease .5s  normal both;
 }
 header h1{
-    background: local;
+   
     font-size: 4rem;
 }
 @keyframes Titulo{
@@ -38,14 +40,14 @@ nav{
     display: flex;
     justify-content:center;
 }
-.NavegacionPadreContainer
+.Navegacion__Container
 {
     margin-top: 50px;
     display: flex;
     flex-wrap: nowrap;
     position:relative;
 }
-.boton
+.link-boton
 {
     flex-wrap: nowrap;
     background: linear-gradient(to right top, #191717, #1b1919, #1d1a1a, #1f1c1c, #211e1e, #312e2e, #423f3f, #545051, #7b787a, #a5a3a4, #d1d0d1, #ffffff);
@@ -55,7 +57,7 @@ nav{
     border-radius: 15px;
     transition-duration: 1s;
 }
-.btn:hover
+.link-boton:hover
 {
 scale:150%;
 background: linear-gradient(to left bottom, #191717, #1b1919, #1d1a1a, #1f1c1c, #211e1e, #312e2e, #423f3f, #545051, #7b787a, #a5a3a4, #d1d0d1, #ffffff);

@@ -1,0 +1,14 @@
+.navbar-custom .navbar-brand,.navbar-custom .navbar-nav .nav-link
+{
+    color: $color-text-primary !important;
+    font-size: $font-size-text;
+    .navbar-custom .navbar-brand img
+    {
+        width:$width-height-icon ;
+        height:$width-height-icon;
+    }
+    .navbar-custom .navbar-nav .nav-link:hover
+    {
+        background: $background-boton-secondary;
+    }
+}

@@ -1,0 +1,52 @@
+.Header__index {
+  display: flex;
+  flex-wrap: nowrap;
+  background: none;
+  animation: Titulo 6s ease 0.5s normal both;
+}
+
+@keyframes Titulo {
+  from {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(25%);
+    opacity: 1;
+  }
+}
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.Navegacion__Container {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+}
+
+p {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.P_1 {
+  animation: Parrafos 4s ease 3s both;
+}
+
+.P_2 {
+  animation: Parrafos 4s ease 5s both;
+}
+
+@keyframes Parrafos {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */
