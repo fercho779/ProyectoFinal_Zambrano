@@ -38,16 +38,6 @@ form h2, input, textarea, label {
 
 body {
   background-image: url(../assest/img/solid-concrete-wall-textured-backdrop.jpg);
-  background-position: center;
-  height: 100%;
-}
-
-html {
-  height: 100%;
-}
-
-.main {
-  width: auto;
 }
 
 .Header__index {
@@ -156,11 +146,13 @@ footer img {
   color: white !important;
   font-size: 2rem;
 }
-.navbar-custom .navbar-brand .navbar-custom .navbar-brand img, .navbar-custom .navbar-nav .nav-link .navbar-custom .navbar-brand img {
+
+.navbar-custom .navbar-brand img {
   width: 60px;
   height: 60px;
 }
-.navbar-custom .navbar-brand .navbar-custom .navbar-nav .nav-link:hover, .navbar-custom .navbar-nav .nav-link .navbar-custom .navbar-nav .nav-link:hover {
+
+.navbar-custom .navbar-nav .nav-link:hover {
   background: linear-gradient(to left bottom, #191717, #1b1919, #1d1a1a, #1f1c1c, #211e1e, #312e2e, #423f3f, #545051, #7b787a, #a5a3a4, #d1d0d1, #ffffff);
 }
 
@@ -178,8 +170,7 @@ footer img {
   justify-self: center;
 }
 .Foto_Perfil img {
-  grid-area: foto;
-  justify-self: center;
+  border-radius: 20%;
 }
 
 .Descripcion_Perfil {
@@ -192,14 +183,12 @@ footer img {
 }
 
 .idiomas {
-  font-size: 4rem;
   margin: 25px;
   animation: Parrafos 2s ease 0.5s both;
 }
 
 .listaIdiomas {
   margin: 25px;
-  font-size: 3rem;
   animation: Parrafos 2s ease 1s both;
 }
 
@@ -221,6 +210,35 @@ footer img {
   }
   footer h3 {
     font-size: 2rem;
+  }
+  .Contenedor_Perfil {
+    grid-template-columns: 450px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "foto Descripcion";
+  }
+  .Descripcion_Perfil p {
+    text-align: left;
+  }
+  .Foto_Perfil {
+    margin: 0px 20px;
+  }
+  .Estudios {
+    grid-template-columns: 400px auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "Foto_UAI Descripcion_UAI" "Foto_UTN Descripcion_UTN" "Foto_Coder Descripcion_Coder";
+  }
+  .Parrafos-Estudios {
+    text-align: left;
+    align-self: center;
+  }
+  .Logo_UAI img {
+    height: 200px;
+  }
+  .Logo_Coder img {
+    height: 200px;
+  }
+  .Logo_UTN img {
+    height: 200px;
   }
 }
 

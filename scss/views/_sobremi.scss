@@ -17,8 +17,7 @@
     justify-self: center;
     img
     {
-        grid-area: foto;
-        justify-self: center;
+        border-radius: 20%;
     }
 }
 .Descripcion_Perfil
@@ -33,13 +32,12 @@
 }
 .idiomas
 {
-    font-size: 4rem;
-    margin:25px;
+    margin:$margin-definido;
     animation: Parrafos 2s ease .5s both;
 }
 .listaIdiomas
 {
-    margin: 25px;
-    font-size: 3rem;
+    margin: $margin-definido;
+
     animation: Parrafos 2s ease 1s both;
 }
