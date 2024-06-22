@@ -1,0 +1,33 @@
+.main_contacto
+{
+    display: flex;
+    justify-content: center;
+}
+form
+{      
+    
+    background-color: #FFFFFF;	
+    position: relative;	
+    border-radius: 20px;
+    padding: 15px 45px 15px 45px;
+    max-width:500px;
+    text-align: center;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+input, textarea
+{
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    outline: none;
+}
+input
+{
+    margin-top: 10px;
+    cursor: pointer;
+}

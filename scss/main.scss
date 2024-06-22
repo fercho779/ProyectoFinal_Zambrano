@@ -10,6 +10,7 @@
 @import "views/sobremi";
 @import "views/formacion";
 @import "views/trabajos";
+@import "views/contacto";
 @mixin respond-to($media){
     @if $media == 'desktop'
     {
