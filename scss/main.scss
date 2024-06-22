@@ -8,6 +8,8 @@
 @import "layout/footer";
 @import "layout/nav";
 @import "views/sobremi";
+@import "views/formacion";
+@import "views/trabajos";
 @mixin respond-to($media){
     @if $media == 'desktop'
     {
@@ -81,5 +83,17 @@
     .Logo_UTN img
     {
         height: $height-logo-responsive;
+    }
+    .ContainerTrabajo
+    {
+        grid-template-columns: auto auto;
+        justify-items: end;
+    }
+    .Container_img_trabajo
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width:450px ;
+        height: 600px;
     }
 }

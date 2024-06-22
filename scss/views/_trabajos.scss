@@ -1,0 +1,47 @@
+.Pasantia
+{
+    margin:$margin-definido;
+}
+p
+{
+    margin: $margin-definido;
+}
+.ContainerTrabajo
+{
+    display: grid;
+    grid-template-columns: 525px auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "lista logo"
+    ;
+
+}
+.Container_img_trabajo
+{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+    img{
+        width:200px;
+        height: 200px;
+        border-radius: 20px;
+        margin: 10px;
+        grid-area: logo;
+    }
+}
+.article ul
+{
+    padding-left: 35px;
+    margin: $margin-definido;
+   
+}
+li{
+    margin: $margin-definido;
+    grid-area: lista;
+    text-align: justify;
+}
+.LogoRobotica
+{
+    background: white;
+}

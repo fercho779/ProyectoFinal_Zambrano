@@ -1,0 +1,56 @@
+.Estudios
+{
+    display: grid;
+    height: auto;
+    grid-template-columns: $grid-template-columns-size;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+    "Foto_UAI"
+    "Descripcion_UAI"
+    "Foto_UTN"
+    "Descripcion_UTN"
+    "Foto_Coder"
+    "Descripcion_Coder"
+    ;
+    row-gap:20px;
+}
+.Logo_UAI
+{
+    grid-area: Foto_UAI;
+    justify-self: center;
+    img{
+        height: $height-logo;
+    }
+}
+.Estudios_UAI
+{
+    grid-area: Descripcion_UAI;
+}
+.Logo_UTN
+{
+    grid-area: Foto_UTN;
+    img{
+        height: $height-logo;
+    }
+}
+.Estudios_UTN
+{
+    grid-area: Descripcion_UTN;
+}
+.Logo_Coder
+{
+    grid-area: Foto_Coder ;
+    img{
+        height: $height-logo;
+        justify-self: center;
+    }
+}
+.Estudios_Coder
+{
+    grid-area: Descripcion_Coder;
+}
+.Parrafos-Estudios
+{
+    text-align: justify;
+    margin: $margin-definido;
+}

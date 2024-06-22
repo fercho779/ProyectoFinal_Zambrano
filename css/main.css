@@ -192,6 +192,99 @@ footer img {
   animation: Parrafos 2s ease 1s both;
 }
 
+.Estudios {
+  display: grid;
+  height: auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-areas: "Foto_UAI" "Descripcion_UAI" "Foto_UTN" "Descripcion_UTN" "Foto_Coder" "Descripcion_Coder";
+  row-gap: 20px;
+}
+
+.Logo_UAI {
+  grid-area: Foto_UAI;
+  justify-self: center;
+}
+.Logo_UAI img {
+  height: 300px;
+}
+
+.Estudios_UAI {
+  grid-area: Descripcion_UAI;
+}
+
+.Logo_UTN {
+  grid-area: Foto_UTN;
+}
+.Logo_UTN img {
+  height: 300px;
+}
+
+.Estudios_UTN {
+  grid-area: Descripcion_UTN;
+}
+
+.Logo_Coder {
+  grid-area: Foto_Coder;
+}
+.Logo_Coder img {
+  height: 300px;
+  justify-self: center;
+}
+
+.Estudios_Coder {
+  grid-area: Descripcion_Coder;
+}
+
+.Parrafos-Estudios {
+  text-align: justify;
+  margin: 25px;
+}
+
+.Pasantia {
+  margin: 25px;
+}
+
+p {
+  margin: 25px;
+}
+
+.ContainerTrabajo {
+  display: grid;
+  grid-template-columns: 525px auto;
+  grid-template-rows: auto;
+  grid-template-areas: "lista logo";
+}
+
+.Container_img_trabajo {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  align-items: center;
+}
+.Container_img_trabajo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  margin: 10px;
+  grid-area: logo;
+}
+
+.article ul {
+  padding-left: 35px;
+  margin: 25px;
+}
+
+li {
+  margin: 25px;
+  grid-area: lista;
+  text-align: justify;
+}
+
+.LogoRobotica {
+  background: white;
+}
+
 @media (min-width: 1024px) {
   .nav__container__index {
     grid-template-columns: auto auto auto auto;
@@ -240,6 +333,17 @@ footer img {
   .Logo_UTN img {
     height: 200px;
   }
+  .ContainerTrabajo {
+    grid-template-columns: auto auto;
+    justify-items: end;
+  }
+  .Container_img_trabajo {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 450px;
+    height: 600px;
+  }
+  
 }
 
 /*# sourceMappingURL=main.css.map */
