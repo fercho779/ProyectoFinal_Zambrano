@@ -80,7 +80,6 @@ body {
   grid-template-rows: auto auto;
   grid-template-areas: "btn_sobremi btn_formacion " "btn_contacto btn_trabajos";
   height: 500px;
-  column-gap: 150px;
   width: auto;
 }
 .nav__container__index a {
