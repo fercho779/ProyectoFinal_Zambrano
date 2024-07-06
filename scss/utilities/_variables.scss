@@ -1,14 +1,10 @@
 $color-text-primary: white;
 $color-text-secondary: black;
 $font-family-primary: "IBM plex sans";
-$background-project: url(../assest/img/solid-concrete-wall-textured-backdrop.jpg);
-$font-size-title: 4rem;
-$font-size-subtitle: 3rem;
-$font-size-text: 2rem;
-$background-boton-primary: linear-gradient(to right top, #191717, #1b1919, #1d1a1a, #1f1c1c, #211e1e, #312e2e, #423f3f, #545051, #7b787a, #a5a3a4, #d1d0d1, #ffffff);
-$background-boton-secondary: linear-gradient(to left bottom, #191717, #1b1919, #1d1a1a, #1f1c1c, #211e1e, #312e2e, #423f3f, #545051, #7b787a, #a5a3a4, #d1d0d1, #ffffff);
-$padding-boton: 25px;
-$border-radius-boton: 15px;
+$background-project: black;
+$font-size-title: 4em;
+$font-size-subtitle: 3.5em;
+$font-size-text: 2.5rem;
 $box-shadow-boton: 0 0 15px white;
 $margin-footer: 40px 20px 0px 0px;
 $max-width-img-footer: 100px;
@@ -21,4 +17,3 @@ $height-logo-responsive:200px;
 $justify-logo: center;
 $width-height-icon: 60px;
 $max-width:100%;
-$background-form: url(../assest/img/fondo_form.jpg)

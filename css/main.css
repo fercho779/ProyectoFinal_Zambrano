@@ -12,40 +12,37 @@ h1 {
   font-family: "IBM plex sans";
   font-weight: 700;
   color: white;
-  font-size: 4rem;
+  font-size: 4em;
 }
 
 h2, h3 {
   font-family: "IBM plex sans";
   font-weight: 700;
   color: white;
-  font-size: 3rem;
+  font-size: 3.5em;
 }
 
 p, a, li {
   font-family: "IBM plex sans";
   font-weight: 400;
   color: white;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 form h2, input, textarea, label {
   font-family: "IBM plex sans";
   font-weight: 400;
   color: black;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 body {
-  background-image: url(../assest/img/solid-concrete-wall-textured-backdrop.jpg);
+  background-color: black;
 }
 
-.Header__index {
-  margin: 25px 0px;
+#carouselExampleSlidesOnly {
+  position: relative;
   width: 100%;
-}
-.Header__index h1 {
-  text-align: center;
 }
 
 .carousel-inner img {
@@ -55,75 +52,40 @@ body {
   width: 100%;
 }
 
-.section__index__p1 {
-  margin-top: 50px;
-  width: 100%;
-}
-.section__index__p1 p {
-  animation: Parrafos 4s ease 3s both;
+.hero-container {
   text-align: center;
-}
-
-.section__index__p2 {
-  margin: 25px 0px;
+  padding: 150px 20px 100px 20px;
+  background: linear-gradient(to right, #000, #111);
+  position: absolute;
   width: 100%;
-}
-.section__index__p2 p {
-  animation: Parrafos 4s ease 5s both;
-  text-align: justify;
-  margin: 25px;
-}
-
-.nav__container__index {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-  grid-template-areas: "btn_sobremi btn_formacion " "btn_contacto btn_trabajos";
   height: 500px;
-  width: auto;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5);
 }
-.nav__container__index a {
+
+section {
   text-align: center;
-  justify-self: center;
-  align-self: center;
+  height: auto;
 }
 
-@keyframes Parrafos {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.btn_sobremi {
-  grid-area: btn_sobremi;
+.iframe-views {
+  width: 100%;
+  height: 2366px;
 }
 
-.btn_formacion {
-  grid-area: btn_formacion;
+.Proyectos-card {
+  background-image: url(/assest/img/Monarch_Project.jpg);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
-
-.btn_contacto {
-  grid-area: btn_contacto;
-}
-
-.btn_trabajos {
-  grid-area: btn_trabajos;
-}
-
-.link-boton {
-  background: linear-gradient(to right top, #191717, #1b1919, #1d1a1a, #1f1c1c, #211e1e, #312e2e, #423f3f, #545051, #7b787a, #a5a3a4, #d1d0d1, #ffffff);
-  text-decoration: none;
-  border-radius: 15px;
-  padding: 25px;
-  transition-duration: 1s;
-}
-.link-boton:hover {
-  scale: 125%;
-  background: linear-gradient(to left bottom, #191717, #1b1919, #1d1a1a, #1f1c1c, #211e1e, #312e2e, #423f3f, #545051, #7b787a, #a5a3a4, #d1d0d1, #ffffff);
-  box-shadow: 0 0 15px white;
-  cursor: pointer;
+.Proyectos-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 255, 0.5);
 }
 
 footer {
@@ -143,16 +105,15 @@ footer img {
 
 .navbar-custom .navbar-brand, .navbar-custom .navbar-nav .nav-link {
   color: white !important;
-  font-size: 2rem;
+  font-size: 2.5rem;
+}
+.navbar-custom .navbar-brand:hover, .navbar-custom .navbar-nav .nav-link:hover {
+  color: #00f !important;
 }
 
 .navbar-custom .navbar-brand img {
   width: 60px;
   height: 60px;
-}
-
-.navbar-custom .navbar-nav .nav-link:hover {
-  background: linear-gradient(to left bottom, #191717, #1b1919, #1d1a1a, #1f1c1c, #211e1e, #312e2e, #423f3f, #545051, #7b787a, #a5a3a4, #d1d0d1, #ffffff);
 }
 
 .Contenedor_Perfil {
@@ -318,18 +279,6 @@ input {
 }
 
 @media (min-width: 1024px) {
-  .nav__container__index {
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto;
-    grid-template-areas: "btn_sobremi btn_formacion btn_contacto btn_trabajos ";
-    column-gap: 0px;
-    height: auto;
-    width: 100%;
-  }
-  .nav__container__index a {
-    padding: 10px 40px;
-    width: auto;
-  }
   footer img {
     width: 50px;
   }
@@ -340,9 +289,6 @@ input {
     grid-template-columns: 450px 1fr;
     grid-template-rows: auto;
     grid-template-areas: "foto Descripcion";
-  }
-  .Descripcion_Perfil p {
-    text-align: left;
   }
   .Foto_Perfil {
     margin: 0px 20px;
