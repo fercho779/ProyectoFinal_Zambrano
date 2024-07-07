@@ -1,6 +1,8 @@
 footer
-{
-    margin:$margin-footer;
+{   
+    justify-self:end;
+    align-self:end;
+    padding-top: $padding-footer;
     display: flex;
     gap: 10px;
     justify-content: end;

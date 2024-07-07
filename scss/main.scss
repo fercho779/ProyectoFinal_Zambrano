@@ -9,15 +9,7 @@
 @import "views/formacion";
 @import "views/trabajos";
 @import "views/contacto";
-@mixin respond-to($media){
-    @if $media == 'desktop'
-    {
-        @media(min-width: 1024px)
-        {
-            @content;
-        }
-    }
-}
+
 @include respond-to('desktop'){
    
       footer img

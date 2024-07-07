@@ -13,9 +13,10 @@
     <title>Porfolio</title>
 </head>
 <body>
-    <main class="hero-container-index">
-        <header class="Header__index">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-local navbar-custom">
+    <main>
+        <div id="particles-js"></div>
+        <header>
+            <nav class="navbar navbar-expand-xxl navbar-dark bg-local navbar-custom">
                 <a class="navbar-brand" href="../index.html">
                     <img src="../assest/img/portfolio_351456.png" alt="Portfolio">
                 </a>
@@ -25,19 +26,19 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav w-100 d-flex justify-content-end">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#SobreMi">SobreMi</a>
+                            <a class="nav-link" href="#sobre-mi">SobreMi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#Formacion">Formación</a>
+                            <a class="nav-link" href="#formacion">Formación</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#Trabajos y Experiencias">Trabajos y Experiencias</a>
+                            <a class="nav-link" href="#experiencias">Experiencias</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#Proyectos">Proyectos</a>
+                            <a class="nav-link" href="#proyectos">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#Contacto">Contacto</a>
+                            <a class="nav-link" href="#contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -66,36 +67,29 @@
                 </div>
             </div>
         </div>
-        <section id ="SobreMi">
-            <h1>Sobre Mi</h1>
-            <div>
-                <iframe class="iframe-views" src="./pages/sobreMi.html" scrolling="no"frameborder="0" allowfullscreen></iframe>
-            </div>
+        <section id ="sobre-mi" class="sobre-mi-card">
+            <h1>Sobre mi</h1>
+            <Div class="sobre-mi-foto-card">
+                <img src="../assest/img/fotoperfil.png" class="img-fluid" alt="fotoperfil">
+            </Div>
+            <Div class="sobre-mi-descripcion-card">
+                <h2>Hola, soy Fernando</h2>
+                <p>
+                    Estudiante de Ingeniería en Sistemas con pasión por la tecnología y la innovación. Me especializo en transmitir información técnica de manera clara y eficaz. ¡Descubre más sobre mí y mis habilidades!
+                </p>
+                <button onclick="location.href='./pages/sobreMi.html'">Conoce más sobre mí</button>
+            </Div>
         </section>
-        <section id ="Formacion">
-            <h1>Formacion</h1>
-            <div>
-                <iframe class="iframe-views" src="./pages/Formacion.html" scrolling="no"frameborder="0" allowfullscreen></iframe>
-            </div>
+        <section id ="formacion">
         </section>
-        <section id ="Trabajos y Experiencias">
-            <h1>Trabajos y experiencias</h1>
-            <div>
-                <iframe class="iframe-views" src="./pages/TrabajosExperiencias.html" scrolling="no"frameborder="0" allowfullscreen></iframe>
-            </div>
+        <section id ="experiencias">
         </section>
-        <Section id="Proyectos">
+        <Section id="proyectos">
             <h1>Proyectos</h1>
-            <article class="Proyectos-card">
+            <div class="proyectos-card">
                 <p>Proyecto en construccion</p>
-            </article>
-        </Section>
-        <section id ="Contacto">
-            <h1>Contacto</h1>
-            <div>
-                <iframe class="iframe-views" src="./pages/Contacto.html" scrolling="no"frameborder="0" allowfullscreen></iframe>
             </div>
-        </section>
+        </Section>
         <footer>
             <h3>Sigueme en: </h3>
             <a href="https://github.com/fercho779"target="blank" class="github">
@@ -109,6 +103,9 @@
             </a>
         </footer>
     </main>
+    
+    <script src="./js/particles.min.js"></script>
+    <script src="./js/particlesjs-config.json"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

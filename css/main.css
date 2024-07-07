@@ -37,7 +37,23 @@ form h2, input, textarea, label {
 }
 
 body {
-  background-color: black;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#particles-js {
+  width: 100%;
+  height: 100vh;
+  background: black;
+  z-index: -1;
+  position: fixed;
 }
 
 #carouselExampleSlidesOnly {
@@ -68,12 +84,32 @@ section {
   height: auto;
 }
 
-.iframe-views {
-  width: 100%;
-  height: 2366px;
+.sobre-mi-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header-card" "foto-card" "descripcion-card";
+}
+.sobre-mi-card p {
+  text-align: justify;
+}
+.sobre-mi-card img {
+  width: 500px;
+  height: 500px;
+  border-radius: 25%;
+}
+.sobre-mi-card h1 {
+  grid-area: header-card;
 }
 
-.Proyectos-card {
+.sobre-mi-foto-card {
+  grid-area: foto-card;
+}
+
+.sobre-mi-descripcion-card {
+  grid-area: descripcion-card;
+}
+
+.proyectos-card {
   background-image: url(/assest/img/Monarch_Project.jpg);
   margin: 20px;
   padding: 20px;
@@ -83,13 +119,32 @@ section {
   background-size: cover;
   transition: transform 0.3s, box-shadow 0.3s;
 }
-.Proyectos-card:hover {
+.proyectos-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 0, 255, 0.5);
 }
 
+@media (min-width: 1024px) {
+  .sobre-mi-card {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header-card header-card" "foto-card descripcion-card";
+  }
+  .sobre-mi-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  .sobre-mi-foto-card {
+    grid-area: foto-card;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 footer {
-  margin: 40px 20px 0px 0px;
+  justify-self: end;
+  align-self: end;
+  padding-top: 40px;
   display: flex;
   gap: 10px;
   justify-content: end;
@@ -116,6 +171,11 @@ footer img {
   height: 60px;
 }
 
+@media (min-width: 1440px) {
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+  }
+}
 .Contenedor_Perfil {
   display: Grid;
   height: auto;

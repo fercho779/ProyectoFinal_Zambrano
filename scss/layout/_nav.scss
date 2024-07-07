@@ -12,3 +12,8 @@
     width:$width-height-icon ;
     height:$width-height-icon;
 }
+@media (min-width: 1440px) {
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row  
+    }
+}
