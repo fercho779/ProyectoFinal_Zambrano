@@ -4,11 +4,17 @@ h1{
     color: $color-text-primary;
     font-size: $font-size-title;
 }
-h2,h3{
+h2{
     font-family: $font-family-primary;
     font-weight: 700;
     color: $color-text-primary;
     font-size:$font-size-subtitle;
+}
+h3{
+    font-family: $font-family-primary;
+    font-weight: 700;
+    color: $color-text-primary;
+    font-size:$font-size-sub-subtitle;
 }
 p,a,li 
 {

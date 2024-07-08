@@ -1,0 +1,21 @@
+button{
+    margin: 2em 0;
+    padding: 1em 2em;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 15px;
+    &:hover
+    {
+        box-shadow: $box-shadow-boton;
+    }
+}
+@include respond-to('desktop')
+{
+    button{
+        display: block;
+        margin-left: 25px;
+    }
+}

@@ -7,11 +7,26 @@ footer
     gap: 10px;
     justify-content: end;
     align-items: center;
+    width: 100%;
     img{
         display: flex;
         width: $max-width-img-footer;
         height: auto;
         background: local;
         background-repeat: no-repeat;
+    }
+    h3{
+        font-size: $font-size-text;
+    }
+}
+@include respond-to('desktop')
+{
+    footer img
+    {
+        width: 2em;
+    }
+    footer h3
+    {
+    font-size: 2rem;
     }
 }

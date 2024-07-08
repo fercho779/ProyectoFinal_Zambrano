@@ -3,23 +3,16 @@
 @import "base/fonts";
 @import "base/typography";
 @import"layout/layout";
+@import "layout/grid";
 @import "layout/footer";
 @import "layout/nav";
+@import "components/buttons";
 @import "views/sobremi";
 @import "views/formacion";
 @import "views/trabajos";
 @import "views/contacto";
 
 @include respond-to('desktop'){
-   
-      footer img
-    {
-        width: 50px;
-    }
-    footer h3
-    {
-    font-size: 2rem;
-    }
     .Contenedor_Perfil{
         grid-template-columns: 450px 1fr;
         grid-template-rows: auto;

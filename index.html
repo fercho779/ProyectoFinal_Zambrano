@@ -16,7 +16,7 @@
     <main>
         <div id="particles-js"></div>
         <header>
-            <nav class="navbar navbar-expand-xxl navbar-dark bg-local navbar-custom">
+            <nav class="navbar navbar-expand-xl navbar-dark bg-local navbar-custom">
                 <a class="navbar-brand" href="../index.html">
                     <img src="../assest/img/portfolio_351456.png" alt="Portfolio">
                 </a>
@@ -67,28 +67,68 @@
                 </div>
             </div>
         </div>
-        <section id ="sobre-mi" class="sobre-mi-card">
+        <section id ="sobre-mi" class="card-section">
             <h1>Sobre mi</h1>
-            <Div class="sobre-mi-foto-card">
-                <img src="../assest/img/fotoperfil.png" class="img-fluid" alt="fotoperfil">
-            </Div>
-            <Div class="sobre-mi-descripcion-card">
-                <h2>Hola, soy Fernando</h2>
-                <p>
-                    Estudiante de Ingeniería en Sistemas con pasión por la tecnología y la innovación. Me especializo en transmitir información técnica de manera clara y eficaz. ¡Descubre más sobre mí y mis habilidades!
-                </p>
-                <button onclick="location.href='./pages/sobreMi.html'">Conoce más sobre mí</button>
-            </Div>
+            <article class="card-container">
+                <Div class="card-foto">
+                    <img src="../assest/img/fotoperfil.png" class="img-fluid card-foto-perfil" alt="fotoperfil">
+                </Div>
+                <Div class="card-descripcion">
+                    <h2>Hola, soy Fernando</h2>
+                    <p>
+                        Estudiante de Ingeniería en Sistemas con pasión por la tecnología y la innovación. Me especializo en transmitir información técnica de manera clara y eficaz. ¡Descubre más sobre mí y mis habilidades!
+                    </p>
+                    <button onclick="location.href='./pages/sobreMi.html'">Conoce más sobre mí</button>
+                </Div>
+            </article>
         </section>
-        <section id ="formacion">
+        <section id ="formacion" class="card-section">
+            <h1>Formacion</h1>
+            <article class="card-container">
+                <div class="card-foto">
+                    <img src="./assest/img/escudo-uai-recortado.png" class="img-fluid card-logo-uai" alt="UAI-logo">
+                </div>
+                <div class="card-descripcion">
+                    <p>
+                        Mi formación académica y profesional refleja un compromiso constante con el aprendizaje y el desarrollo en el campo de la tecnología y la ingeniería. 
+                        Además de mi formación universitaria, he complementado mis estudios con cursos especializados.
+                    </p>
+                    <button onclick="location.href='./pages/formacion.html'">Conoce más de mi formacion</button>
+                </div>
+            </article>
         </section>
-        <section id ="experiencias">
+        <section id ="experiencias" class="card-section">
+            <h1>Experincia</h1>
+            <article class="card-container">
+                <div class="card-foto">
+                    <img src="../assest/img/LogoRoboticaIndustrial.png" class="img-fluid card-foto-experiencia" alt="logo-robotica-industrial">
+                </div>
+                <div class="card-descripcion">
+                    <h2>Robotica industrial</h2>
+                    <p>
+                        Tuve la oportunidad de hacer una pasantía en Rotica Industrial SRL y adquirir experiencia práctica en la programación y mantenimiento de robots industriales. 
+                        si quieres saber mas sobre mis responsabilidades y logros durante ese período, destacando las habilidades y conocimientos que he desarrollado en este entorno profesional dinámico puedes presionar el boton.
+                    </p>
+                    <button onclick="location.href='./pages/trabajos-experiencias.html'">Conoce más de mi experiencia</button>
+                </div>
+            </article>
         </section>
-        <Section id="proyectos">
+        <Section id="proyectos" class="card-section">
             <h1>Proyectos</h1>
-            <div class="proyectos-card">
-                <p>Proyecto en construccion</p>
-            </div>
+            <article class="card-container">
+                <div class="card-foto">
+                    <img src="./assest/img/Monarch_Project.jpg" class="img-fluid card-monarch" alt="Monarch_Project">
+                </div>
+                <div class="card-descripcion">
+                    <h3>Bienvenidos a Monarch: El Corazón del Monsterverse</h3>
+                    <p>
+                        Este es un proyecto propio, nacido de mi pasión como fan de esta épica saga.
+                        Descubre el fascinante mundo de Monarch, la organización secreta dedicada al estudio y la contención de los titanes en el Monsterverse. 
+                        Explora archivos clasificados, perfiles de los titanes más icónicos, y los esfuerzos incansables de Monarch para comprender y coexistir con estos gigantes ancestrales.
+                    </p>
+                    <button>Conoce más de este proyecto</button>
+                </div>
+            </article>
         </Section>
         <footer>
             <h3>Sigueme en: </h3>

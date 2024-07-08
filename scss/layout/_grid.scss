@@ -1,0 +1,79 @@
+.card-section{
+    margin: 25px 25px 0px 25px;
+    text-align: center;
+    height: auto;
+    p{
+        text-align: justify;
+    }
+}
+.card-foto-perfil
+{
+        width: 400px;
+        height: 400px;
+        border-radius: 25%;
+        margin: 25px 0px;
+}
+.card-container
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "foto-card"
+    "descripcion-card" 
+    ;
+    border-radius: 50px;
+    background: $background-card ;
+    transition: $transition-card;
+    margin-top: 25px;
+    &:hover
+    {
+        transform: translateY(-10px);
+        box-shadow: $box-shadow-card;
+    }
+}
+.card-foto{
+    grid-area: foto-card;
+}
+.card-descripcion
+{
+    grid-area: descripcion-card;
+}
+.card-foto-experiencia{
+    height: 300px;
+    
+}
+.card-monarch{
+    width: auto;
+    height: 250px;
+    border-radius: 30px;
+    margin: 25px 0px;
+}
+@include respond-to('desktop')
+{
+    .card-container{
+        grid-template-columns: 400px 1fr;
+        grid-template-areas:
+        "header-card header-card"
+        "foto-card descripcion-card" 
+        ;
+    }
+    .card-foto {
+        grid-area: foto-card;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-foto-perfil
+    {
+        max-width: 100%;
+        height: auto;
+        border-radius: 50%;
+        margin-left: 25px;
+    }
+    .card-foto-experiencia{
+        height: 400px;
+    }
+    .card-monarch{
+        margin-left: 25px;
+    }
+}
