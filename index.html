@@ -2,23 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Este es mi porfolio de desarrollo web y puedes encontrar cosas sobre mi, trabajos y experiencias">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="shortcut icon" href="assest/img/portfolio_351456.png" type="image/x-icon">
+    <meta name="description" content="Este es mi portfolio de desarrollo web y puedes encontrar cosas sobre mi, trabajos y experiencias">
     <meta name="keywords" content="portafolio, desarrollo web, HTML, CSS, JavaScript, proyectos,Fernando, estudiante, estudiante uai, estudiante coderhouse">
     <meta name="linkedin:image" content="./assest/img/iconoLinkdin">
     <meta name="github:image" content="./assest/img/github-icon-2">
     <meta name="author" content="[Fernando]">
-    <title>Porfolio</title>
+    <title>Portfolio</title>
 </head>
 <body>
     <main>
         <div id="particles-js"></div>
         <header>
-            <nav class="navbar navbar-expand-xl navbar-dark bg-local navbar-custom">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-local navbar-custom">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../assest/img/portfolio_351456.png" alt="Portfolio">
+                    <img src="./assest/img/portfolio_351456.png" alt="Portfolio">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -26,7 +26,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav w-100 d-flex justify-content-end">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#sobre-mi">SobreMi</a>
+                            <a class="nav-link" href="#sobre-mi">Sobre mi</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#formacion">Formación</a>
@@ -38,7 +38,7 @@
                             <a class="nav-link" href="#proyectos">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contacto">Contacto</a>
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -47,7 +47,7 @@
         <Section>
             <div class="hero-container">
                 <h1>
-                    Bienvenidos a mi Porfolio
+                    Bienvenidos a mi Portfolio
                 </h1>
                 <p>
                     Un ingeniero en progreso
@@ -71,7 +71,7 @@
             <h1>Sobre mi</h1>
             <article class="card-container">
                 <Div class="card-foto">
-                    <img src="../assest/img/fotoperfil.png" class="img-fluid card-foto-perfil" alt="fotoperfil">
+                    <img src="./assest/img/fotoperfil.png" class="img-fluid card-foto-perfil" alt="fotoperfil">
                 </Div>
                 <Div class="card-descripcion">
                     <h2>Hola, soy Fernando</h2>
@@ -101,7 +101,7 @@
             <h1>Experincia</h1>
             <article class="card-container">
                 <div class="card-foto">
-                    <img src="../assest/img/LogoRoboticaIndustrial.png" class="img-fluid card-foto-experiencia" alt="logo-robotica-industrial">
+                    <img src="./assest/img/LogoRoboticaIndustrial.png" class="img-fluid card-foto-experiencia" alt="logo-robotica-industrial">
                 </div>
                 <div class="card-descripcion">
                     <h2>Robotica industrial</h2>
@@ -131,19 +131,20 @@
             </article>
         </Section>
         <footer>
-            <h3>Sigueme en: </h3>
-            <a href="https://github.com/fercho779"target="blank" class="github">
-               <img src="./assest/img/github-icon-2.svg">
-            </a>
-            <a href="https://www.linkedin.com/in/fernando-zambrano-609548238/"target="blank"class="linkedin">
-                <img src="./assest/img/iconoLinkdin.png" alt="linkedin">
-            </a>
-            <a href="https://www.instagram.com/byfercho4/"target="blank">
-                <img src="./assest/img/instagram.png" alt="instagram">
-            </a>
+            <div>
+                <a href="https://github.com/fercho779"target="blank" class="github">
+                    <img src="./assest/img/github-icon-2.svg" class="img-fluid" alt="github">
+                 </a>
+                 <a href="https://www.linkedin.com/in/fernando-zambrano-609548238/"target="blank"class="linkedin">
+                     <img src="./assest/img/iconoLinkdin.png" class="img-fluid"  alt="linkedin">
+                 </a>
+                 <a href="https://www.instagram.com/byfercho4/"target="blank">
+                     <img src="./assest/img/instagram.png" class="img-fluid"  alt="instagram">
+                 </a>
+            </div>
+            <p class=>&copy; 2024 Portfolio Fernando, Todos los derechos reservados.</p>
         </footer>
     </main>
-    
     <script src="./js/particles.min.js"></script>
     <script src="./js/particlesjs-config.json"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>

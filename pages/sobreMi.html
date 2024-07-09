@@ -9,18 +9,56 @@
 </head>
 <body>
     <main>
-        <section class="Contenedor_Perfil">
-            <Div class="box Foto_Perfil">
+        <div id="particles-js"></div>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-local navbar-custom">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assest/img/portfolio_351456.png" alt="Portfolio">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav w-100 d-flex justify-content-end">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./formacion.html">Formación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./trabajos-experiencias.html">Experiencias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section class="contenedor-perfil">
+            <Div class="foto-perfil">
                 <img src="../assest/img/fotoperfil.png" class="img-fluid" alt="fotoperfil">
             </Div>
-            <Div class="box Descripcion_Perfil">
+            <Div class="descripcion-perfil-1">
                 <p>
-                    Mi nombre es Fernando soy un estudiante de ingenieria en sistemas, soy eficaz transmitiendo información, sobretodo cuando se trata de datos tecnicos y especializados. Siempre busco maneras de cambiar y mejorar los metodos, sistemas, procesos y resultados. Estoy en constante busqueda de conocimiento para seguir creciendo profecionalmente.
+                    Mi nombre es Fernando soy un estudiante de ingenieria en sistemas, soy eficaz transmitiendo información, sobretodo cuando se trata de datos tecnicos y especializados. 
+                    Esta capacidad me permite comunicar conceptos complejos de forma comprensible, lo cual es esencial en el ámbito de la ingeniería y la tecnología.
                 </p>
             </Div>
+            <div class="descripcion-perfil-2">
+                <p>
+                    Siempre estoy en la búsqueda de nuevas maneras de cambiar y mejorar métodos, sistemas, procesos y resultados.
+                    Estoy continuamente aprendiendo y actualizándome sobre las últimas tendencias y avances en mi campo, lo que me permite crecer profesionalmente y mantenerme a la vanguardia de la industria. 
+                    Mi objetivo es convertirme en un profesional integral, capaz de enfrentar cualquier desafío con creatividad y determinación.
+                </p>
+            </div>
         </section>
-        <Section class="Container-Habilidades">
-            <h2>Habilidades</h2>
+        <Section class="container-habilidades">
+            <h2>Habilidades:</h2>
             <ul>
                 <li>Manejo de paquete Office</li>
                 <li>Conocimiento en C+,C#</li>
@@ -33,11 +71,27 @@
             </ul>
         </Section>
         <h3 class="idiomas">idiomas:</h3>
-        <ul class="listaIdiomas">
+        <ul class="lista-idiomas">
             <li>Español: nativo</li>
             <li>Ingles: intermedio</li>
         </ul>
+        <footer>
+            <div>
+                <a href="https://github.com/fercho779"target="blank" class="github">
+                    <img src="../assest/img/github-icon-2.svg" class="img-fluid" alt="github">
+                 </a>
+                 <a href="https://www.linkedin.com/in/fernando-zambrano-609548238/"target="blank"class="linkedin">
+                     <img src="../assest/img/iconoLinkdin.png" class="img-fluid"  alt="linkedin">
+                 </a>
+                 <a href="https://www.instagram.com/byfercho4/"target="blank">
+                     <img src="../assest/img/instagram.png" class="img-fluid"  alt="instagram">
+                 </a>
+            </div>
+            <p class=>&copy; 2024 Portfolio Fernando, Todos los derechos reservados.</p>
+        </footer>
     </main>
+    <script src="../js/particles.min.js"></script>
+    <script src="../js/particlesjs-config.json"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
