@@ -78,7 +78,6 @@ main {
 .hero-container {
   text-align: center;
   padding: 150px 20px 100px 20px;
-  background: linear-gradient(to right, #000, #111);
   position: absolute;
   width: 100%;
   height: 500px;
@@ -93,6 +92,7 @@ main {
 }
 .card-section p {
   text-align: justify;
+  margin: 25px;
 }
 
 .card-foto-perfil {
@@ -141,13 +141,11 @@ main {
     grid-template-areas: "header-card header-card" "foto-card descripcion-card";
   }
   .card-foto {
-    grid-area: foto-card;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .card-foto-perfil {
-    max-width: 100%;
     height: auto;
     border-radius: 50%;
     margin-left: 25px;
@@ -160,14 +158,17 @@ main {
   }
 }
 footer {
-  justify-self: end;
-  align-self: end;
-  padding-top: 40px;
+  padding-top: 30px;
   display: flex;
-  gap: 10px;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   width: 100%;
+  flex-direction: column;
+}
+footer div {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 footer img {
   display: flex;
@@ -176,16 +177,13 @@ footer img {
   background: local;
   background-repeat: no-repeat;
 }
-footer h3 {
-  font-size: 2em;
+footer img:hover {
+  transform: translateY(-10px);
 }
 
 @media (min-width: 1024px) {
   footer img {
-    width: 2em;
-  }
-  footer h3 {
-    font-size: 2rem;
+    width: 1.5em;
   }
 }
 .navbar-custom .navbar-brand, .navbar-custom .navbar-nav .nav-link {
@@ -208,7 +206,7 @@ button {
   color: rgb(0, 0, 0);
   border: none;
   cursor: pointer;
-  font-size: 1em;
+  font-size: 2em;
   border-radius: 15px;
 }
 button:hover {
@@ -219,45 +217,75 @@ button:hover {
   button {
     display: block;
     margin-left: 25px;
+    font-size: 1.5em;
   }
 }
-.Contenedor_Perfil {
+.contenedor-perfil {
   display: Grid;
   height: auto;
-  grid-template-areas: "foto " "Descripcion";
+  grid-template-areas: "foto " "descripcion" "descripcion-2";
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  row-gap: 20px;
 }
 
-.Foto_Perfil {
+.foto-perfil {
   grid-area: foto;
   justify-self: center;
 }
-.Foto_Perfil img {
+.foto-perfil img {
+  width: 350px;
+  height: 350px;
   border-radius: 20%;
 }
 
-.Descripcion_Perfil {
-  grid-area: Descripcion;
+.descripcion-perfil-1 {
+  grid-area: descripcion;
   animation: Parrafos 2s ease 0.5s both;
 }
-.Descripcion_Perfil p {
-  margin: 25px;
+.descripcion-perfil-1 p {
   text-align: justify;
+  margin: 25px 25px 0px 25px;
+}
+
+.descripcion-perfil-2 {
+  grid-area: descripcion-2;
+  animation: Parrafos 2s ease 0.5s both;
+}
+.descripcion-perfil-2 p {
+  text-align: justify;
+  margin: 0px 25px 25px 25px;
+}
+
+.container-habilidades h2 {
+  margin-left: 25px;
 }
 
 .idiomas {
-  margin: 25px;
+  margin-left: 25px;
   animation: Parrafos 2s ease 0.5s both;
 }
 
-.listaIdiomas {
-  margin: 25px;
+.lista-idiomas {
   animation: Parrafos 2s ease 1s both;
 }
 
-.Estudios {
+@media (min-width: 1024px) {
+  .contenedor-perfil {
+    grid-template-columns: 450px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "foto descripcion" "descripcion-2 descripcion-2";
+    row-gap: 0px;
+  }
+  .Foto_Perfil {
+    margin: 0px 20px;
+  }
+  .Estudios {
+    grid-template-columns: 400px auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "Foto_UAI Descripcion_UAI" "Foto_UTN Descripcion_UTN" "Foto_Coder Descripcion_Coder";
+  }
+}
+.estudios {
   display: grid;
   height: auto;
   grid-template-columns: 1fr;
@@ -266,90 +294,111 @@ button:hover {
   row-gap: 20px;
 }
 
-.Logo_UAI {
+.estudios-logo-uai {
   grid-area: Foto_UAI;
   justify-self: center;
 }
-.Logo_UAI img {
+.estudios-logo-uai img {
   height: 300px;
 }
 
-.Estudios_UAI {
+.estudios-uai {
   grid-area: Descripcion_UAI;
 }
 
-.Logo_UTN {
+.estudios-Logo-utn {
   grid-area: Foto_UTN;
 }
-.Logo_UTN img {
+.estudios-Logo-utn img {
   height: 300px;
 }
 
-.Estudios_UTN {
+.estudios-utn {
   grid-area: Descripcion_UTN;
 }
 
-.Logo_Coder {
+.estudios-logo-coder {
   grid-area: Foto_Coder;
 }
-.Logo_Coder img {
+.estudios-logo-coder img {
   height: 300px;
   justify-self: center;
 }
 
-.Estudios_Coder {
+.estudios-coder {
   grid-area: Descripcion_Coder;
 }
 
-.Parrafos-Estudios {
+.parrafos-estudios {
   text-align: justify;
   margin: 25px;
 }
 
-.Pasantia {
+@media (min-width: 1024px) {
+  .estudios {
+    grid-template-columns: 500px 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "Foto_UAI Descripcion_UAI" "Foto_UTN Descripcion_UTN" "Foto_Coder Descripcion_Coder";
+  }
+  .estudios img {
+    height: 200px;
+  }
+  .parrafos-estudios {
+    align-self: center;
+    font-size: 1.3em;
+  }
+}
+.pasantia {
   margin: 25px;
 }
-
-p {
-  margin: 25px;
+.pasantia p {
+  text-align: justify;
 }
 
-.ContainerTrabajo {
+.container-trabajo {
   display: grid;
-  grid-template-columns: 525px auto;
+  grid-template-columns: 1fr auto;
   grid-template-rows: auto;
   grid-template-areas: "lista logo";
 }
 
-.Container_img_trabajo {
+.container-trabajo-img {
   display: flex;
   flex-direction: column;
   width: auto;
   align-items: center;
+  grid-area: logo;
 }
-.Container_img_trabajo img {
+.container-trabajo-img img {
   width: 200px;
   height: 200px;
   border-radius: 20px;
-  margin: 10px;
-  grid-area: logo;
+  margin: 15px 25px 15px 0px;
 }
 
-.article ul {
-  padding-left: 35px;
-  margin: 25px;
-}
-
-li {
-  margin: 25px;
+.container-trabajo-descripcion {
   grid-area: lista;
+}
+.container-trabajo-descripcion ul {
+  padding-left: 25px;
+}
+.container-trabajo-descripcion ul li {
+  margin: 25px;
   text-align: justify;
 }
 
-.LogoRobotica {
+.logo-robotica {
   background: white;
 }
 
+@media (min-width: 1024px) {
+  .container-trabajo-img {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 450px;
+    height: 600px;
+  }
+}
 .main_contacto {
   display: flex;
   justify-content: center;
@@ -381,45 +430,6 @@ input, textarea {
 input {
   margin-top: 10px;
   cursor: pointer;
-}
-
-@media (min-width: 1024px) {
-  .Contenedor_Perfil {
-    grid-template-columns: 450px 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "foto Descripcion";
-  }
-  .Foto_Perfil {
-    margin: 0px 20px;
-  }
-  .Estudios {
-    grid-template-columns: 400px auto;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "Foto_UAI Descripcion_UAI" "Foto_UTN Descripcion_UTN" "Foto_Coder Descripcion_Coder";
-  }
-  .Parrafos-Estudios {
-    text-align: left;
-    align-self: center;
-  }
-  .Logo_UAI img {
-    height: 200px;
-  }
-  .Logo_Coder img {
-    height: 200px;
-  }
-  .Logo_UTN img {
-    height: 200px;
-  }
-  .ContainerTrabajo {
-    grid-template-columns: auto auto;
-    justify-items: end;
-  }
-  .Container_img_trabajo {
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 450px;
-    height: 600px;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */

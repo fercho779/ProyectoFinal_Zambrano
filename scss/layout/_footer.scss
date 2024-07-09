@@ -1,32 +1,31 @@
 footer
 {   
-    justify-self:end;
-    align-self:end;
     padding-top: $padding-footer;
     display: flex;
-    gap: 10px;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     width: 100%;
+    flex-direction: column;
+    div{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
     img{
         display: flex;
         width: $max-width-img-footer;
         height: auto;
         background: local;
         background-repeat: no-repeat;
-    }
-    h3{
-        font-size: $font-size-text;
+        &:hover{
+            transform: translateY(-10px);
+        }
     }
 }
 @include respond-to('desktop')
 {
     footer img
     {
-        width: 2em;
-    }
-    footer h3
-    {
-    font-size: 2rem;
+        width: 1.5em;
     }
 }

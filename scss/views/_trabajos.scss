@@ -1,47 +1,57 @@
-.Pasantia
+.pasantia
 {
     margin:$margin-definido;
+    p{
+        text-align: justify;
+    }
 }
-p
-{
-    margin: $margin-definido;
-}
-.ContainerTrabajo
+
+.container-trabajo
 {
     display: grid;
-    grid-template-columns: 525px auto;
+    grid-template-columns: 1fr auto;
     grid-template-rows: auto;
     grid-template-areas: 
     "lista logo"
     ;
 
 }
-.Container_img_trabajo
+.container-trabajo-img
 {
     display: flex;
     flex-direction: column;
     width: auto;
     align-items: center;
+    grid-area: logo;
     img{
         width:200px;
         height: 200px;
         border-radius: 20px;
-        margin: 10px;
-        grid-area: logo;
+        margin: 15px 25px 15px 0px;
     }
 }
-.article ul
+.container-trabajo-descripcion
 {
-    padding-left: 35px;
-    margin: $margin-definido;
-   
-}
-li{
-    margin: $margin-definido;
     grid-area: lista;
-    text-align: justify;
+    ul{
+        padding-left: 25px;
+        li{
+            margin: $margin-definido;
+            text-align: justify;
+        }
+    }
 }
-.LogoRobotica
+.logo-robotica
 {
     background: white;
+}
+@include respond-to('desktop'){
+
+    .container-trabajo-img
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width:450px ;
+        height: 600px;
+    }
 }

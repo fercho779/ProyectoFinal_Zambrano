@@ -1,4 +1,4 @@
-.Estudios
+.estudios
 {
     display: grid;
     height: auto;
@@ -14,7 +14,7 @@
     ;
     row-gap:20px;
 }
-.Logo_UAI
+.estudios-logo-uai
 {
     grid-area: Foto_UAI;
     justify-self: center;
@@ -22,22 +22,22 @@
         height: $height-logo;
     }
 }
-.Estudios_UAI
+.estudios-uai
 {
     grid-area: Descripcion_UAI;
 }
-.Logo_UTN
+.estudios-Logo-utn
 {
     grid-area: Foto_UTN;
     img{
         height: $height-logo;
     }
 }
-.Estudios_UTN
+.estudios-utn
 {
     grid-area: Descripcion_UTN;
 }
-.Logo_Coder
+.estudios-logo-coder
 {
     grid-area: Foto_Coder ;
     img{
@@ -45,12 +45,32 @@
         justify-self: center;
     }
 }
-.Estudios_Coder
+.estudios-coder
 {
     grid-area: Descripcion_Coder;
 }
-.Parrafos-Estudios
+.parrafos-estudios
 {
     text-align: justify;
     margin: $margin-definido;
+}
+@include respond-to('desktop'){
+    .estudios
+    {
+        grid-template-columns: 500px 1fr;
+        grid-template-rows: repeat(3,auto);
+        grid-template-areas:
+        "Foto_UAI Descripcion_UAI"
+        "Foto_UTN Descripcion_UTN"
+        "Foto_Coder Descripcion_Coder"
+        ;
+        img{
+            height: $height-logo-responsive;
+        }
+    }
+    .parrafos-estudios
+    {
+        align-self: center;
+        font-size: 1.3em;
+    }
 }
