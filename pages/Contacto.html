@@ -8,22 +8,78 @@
     <title>Contacto</title>
 </head>
 <body>
-    <main class="main_contacto">
-        <form >
-            <h2>Contacto</h2>
+    <main>
+        <div id="particles-js"></div>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-local navbar-custom">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assest/img/portfolio_351456.png" alt="Portfolio">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav w-100 d-flex justify-content-end">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobreMi.html">Sobre mi </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./formacion.html">Experiencias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./trabajos-experiencias.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section class="box-contacto">
+            <h1>Contacto</h1>
+            <p>En esta sección, puedes encontrar un formulario donde puedes ponerte en contacto conmigo o darme un consejo para mejorar. Me encantaría escuchar tus comentarios, preguntas, o sugerencias. Completa el formulario a continuación y me aseguraré de responderte lo antes posible.</p>
+        </section>
+            <form action="https://formsubmit.co/fernandozambrano36@gmail.com" method="POST">
+                <div>
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name" placeholder="Nombre">
+                    <label for="Telefono">Telefono</label>
+                    <input type="text" name="Telefono" id="Telefono" placeholder="Telefono">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Mensaje"></textarea>
+                    <input class="btnEnviar" type="submit" value="Enviar">
+                </div>
+            </form>
+        <section class="box-info-contacto">
+            <h2>Información de Contacto</h2>
+            <ul>
+                <li><strong>Correo Electrónico:</strong>fernandozambrano36@gmail.com</li>
+                <li><strong>Teléfono:</strong> +54 11 54873876</li>
+            </ul>
+        </section>
+        <footer>
             <div>
-                <label for="name">Nombre</label>
-                <input type="text" name="name" id="name" placeholder="Nombre">
-                <label for="Telefono">Telefono</label>
-                <input type="text" name="Telefono" id="Telefono" placeholder="Telefono">
-                <label for="email">Email</label>
-                <input type="text" name="email" id="email" placeholder="Email">
-                <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Mensaje"></textarea>
-                <input class="btnEnviar" type="submit" value="Enviar">
+                <a href="https://github.com/fercho779"target="blank" class="github">
+                    <img src="../assest/img/github-icon-2.svg" class="img-fluid" alt="github">
+                 </a>
+                 <a href="https://www.linkedin.com/in/fernando-zambrano-609548238/"target="blank"class="linkedin">
+                     <img src="../assest/img/iconoLinkdin.png" class="img-fluid"  alt="linkedin">
+                 </a>
+                 <a href="https://www.instagram.com/byfercho4/"target="blank">
+                     <img src="../assest/img/instagram.png" class="img-fluid"  alt="instagram">
+                 </a>
             </div>
-        </form>
+            <p class=>&copy; 2024 Portfolio Fernando, Todos los derechos reservados.</p>
+        </footer>
     </main>
+<script src="../js/particles.min.js"></script>
+<script src="../js/particlesjs-config.json"></script>
 <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

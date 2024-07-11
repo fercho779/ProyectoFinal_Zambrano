@@ -39,7 +39,7 @@ p, a, li {
 form h2, input, textarea, label {
   font-family: "IBM plex sans";
   font-weight: 400;
-  color: black;
+  color: white;
   font-size: 2em;
 }
 
@@ -399,20 +399,25 @@ button:hover {
     height: 600px;
   }
 }
-.main_contacto {
-  display: flex;
-  justify-content: center;
+.box-contacto {
+  text-align: justify;
+}
+.box-contacto h1, .box-contacto p, .box-contacto h2, .box-contacto ul {
+  margin: 25px;
 }
 
 form {
-  background-color: #FFFFFF;
-  position: relative;
+  align-self: center;
+  background: linear-gradient(5deg, rgb(181, 167, 197) 25%, rgba(33, 10, 167, 0.1)), url(/assest/img/fondo_form.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 20px;
+  position: relative;
   padding: 15px 45px 15px 45px;
-  max-width: 500px;
+  max-width: 800px;
   text-align: center;
 }
-
 form div {
   display: flex;
   flex-direction: column;
@@ -425,6 +430,7 @@ input, textarea {
   margin-bottom: 10px;
   border: 2px solid black;
   outline: none;
+  color: black;
 }
 
 input {
