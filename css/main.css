@@ -408,7 +408,7 @@ button:hover {
 
 form {
   align-self: center;
-  background: linear-gradient(5deg, rgb(181, 167, 197) 25%, rgba(33, 10, 167, 0.1)), url(/assest/img/fondo_form.jpg);
+  background: linear-gradient(5deg, rgb(181, 167, 197) 25%, rgba(33, 10, 167, 0.1));
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

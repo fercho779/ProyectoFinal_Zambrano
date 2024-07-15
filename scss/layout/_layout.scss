@@ -38,13 +38,3 @@ main
     background: rgba(0, 0, 0, 0.5);
 }
 
-@mixin respond-to($media){
-    @if $media == 'desktop'
-    {
-        @media(min-width: 1024px)
-        {
-            @content;
-        }
-    }
-}
-
