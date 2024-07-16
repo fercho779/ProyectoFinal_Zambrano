@@ -355,6 +355,10 @@ button:hover {
   text-align: justify;
 }
 
+.tareas-robotica {
+  margin-left: 25px;
+}
+
 .container-trabajo {
   display: grid;
   grid-template-columns: 1fr auto;
